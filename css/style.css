@@ -1,0 +1,434 @@
+:root{
+    --main-color: #0079C8;
+    --second-color: #00335b;
+    --opacity-color: #f2f1f1;   
+    --second-modal-color: rgb(34, 34, 34,0.5);
+    --light-color: #fff;
+   
+}
+*{
+    position: relative;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* .wahtss{
+
+   
+   
+} */
+.main-head{
+    height: fit-content;
+    background-color: var(--opacity-color);   
+    text-align: right;
+}
+.main-head div{
+    font-size: 15px;
+    display: inline-block;
+    height: fit-content;
+    padding: 9px 10px;
+    border-right: 3px solid #fff ;
+    cursor: pointer;
+}
+
+.main-head :first-child{
+    background-color: #c5017b;
+    color: #fff;
+    font-weight: lighter;
+}
+.menu-visibility{
+    visibility: hidden;
+    height: 0px;
+}
+.main-menu{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 15px;
+    height: fit-content;
+    text-align: right; 
+}
+
+.contenedor-logo{
+     height: fit-content;
+     text-align: left;
+     margin-left: 190px;
+     margin-bottom: 20px;
+ }
+
+.contenedor-logo a img{
+    height: 60px;
+}
+.list-menu{   
+   height: 60px;
+   padding-top: 15px;
+   margin-right: 80px;   
+  
+}
+
+
+
+/* 
+display: inline-table;
+    background-color: var(--main-color);
+    height: 56px;
+    width: 56px;
+    margin-top: -40px;
+    font-size: 32px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    padding-top: 9px;
+    border: 3px solid #fff; */
+
+.list-menu .item-menu{
+    height:inherit; 
+    display: inline-block;
+    list-style: none;
+    padding: 5px 25px;
+    
+}
+
+
+
+.item-menu li:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.hover-item{
+    background-color: var(--main-color);
+    color: #fff;
+    
+}
+
+.hover-item-li{
+    background-color: var(--main-color);
+    color: #fff;  
+}
+
+.item-menu{
+    text-decoration: none;
+    color: #000;
+}
+
+.list-menu .item-menu:hover{
+    background-color: var(--main-color);   
+}
+
+.submenu{
+    border: /* thin solid #000 */none;
+    height: 150px;
+    padding: 20px;
+/*     margin-right: 50px;
+    margin-left: 50px; */
+    background-color:var(--main-color);
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    text-align: center;   
+}
+
+.submenu .sub-list{
+    line-height: 8.5rem;
+}
+.submenu .sub-list .sub-item{   
+    display: inline-block;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;  
+}
+
+.submenu .sub-list .sub-item:hover{
+    background-color: var(--second-color);
+    transition: 0.8s;
+}
+.main-banner{
+    position: relative; 
+}
+
+.subsection-one{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--opacity-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+/*     padding-left: 50px;
+    padding-right: 50px */;
+    text-align: center; 
+}
+
+.subsection-one img{
+    height: 60px;
+    display: block;
+    margin: 0px auto;
+}
+
+.subsection-one div{
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+    width: 25%;
+    display: inline-block;
+    margin-top: 20px ;
+}
+
+.subsection-one :last-child{
+    text-align: center!important;
+    font-size: 18px;
+}
+
+.subsection-one :last-child h3{
+    color: var(--main-color);
+    font-weight: normal;
+    
+}
+.subsection-one :last-child h2{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.subsection-one :last-child p{
+    font-size: 11px;
+}
+
+.subsection-one :last-child button{
+    background-color:#c5017b ;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 18px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+   
+
+}
+.subsection-two{
+    text-align: center;
+    padding: 25px 0px;
+    height: fit-content;
+}
+.subsection-two div{
+    margin-top: 35px!important;
+    margin-bottom: 35px!important;
+    vertical-align: top;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 5px;
+    width: 560px;
+    height: 230px;
+    background-color: rgb(0, 121, 200, .2) ;
+    display: inline-block;
+    border-radius: 7px;
+    text-align: center;
+}
+.subsection-two div p{    
+    margin: 8px auto;
+    color: var(--main-color);
+    width: 400px;
+    text-align: left;
+}
+.subsection-two div img{
+    margin-top: 25px;
+    opacity: 80%;
+}
+
+
+.subsection-two div p strong{
+    display: block;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 0px 15px;
+  
+}
+
+.subsection-two div button{
+    margin: 25px 75px ;
+    padding: 8px 15px;
+    background-color: #542788;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.subsection-three{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--opacity-color);
+    padding-top: 50px;
+    padding-bottom: 35px;
+/*     padding-left: 50px;
+    padding-right: 50px */;
+    text-align: center; 
+
+}
+
+.subsection-three h1{
+    display: block;
+    margin-bottom: 20px;
+}
+.subsection-three .different-div{
+    background-color: rgb(0, 121, 200, .4);  
+}
+.subsection-three div{
+   vertical-align: top;
+   width: 290px;
+   height: 190px;
+   background-color: rgb(0, 121, 200, .7);
+   display: inline-block;
+   margin: 4px 5px;
+   padding: 10px;
+   border-radius: 7px;
+   color: #fff;   
+   font-size: 16px;
+}
+.subsection-three div p{
+    margin: 30px;
+}
+.subsection-four{
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.subsection-four div{
+    vertical-align: top;
+    display: inline-block;
+    margin: 15px 6px;
+    width: 300px;
+    height: 210px;
+    border: thin solid var(--main-color);
+    border-radius: 7px;
+    text-align: center;
+}
+.subsection-four div strong{
+    display: block;
+}
+
+.subsection-four div p{
+    width: 280px;
+    text-align: center;
+    margin-left:10px;
+}
+.subsection-four div .circle{
+    display: inline-table;
+    background-color: var(--main-color);
+    height: 56px;
+    width: 56px;
+    margin-top: -40px;
+    font-size: 32px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    padding-top: 9px;
+    border: 3px solid #fff;
+}
+
+.subsection-five{
+    position: relative;
+    padding:40px 0px;
+    color: #fff;
+    text-align: center;
+    height: fit-content;
+    background-color: rgb(0, 121, 200, .7);
+}
+.subsection-five div{
+    width: 400px; 
+    margin: 15px auto;
+}
+
+.subsection-five .div-two{
+    border-radius: 10px 100px / 120px;
+    height: 85px;
+    background-color: #fff;
+    color: rgb(0, 121, 200, .7);
+    padding-top:25px ;
+    font-size: 18px; 
+    width: 600px; 
+    
+}
+
+.subsection-five .div-two a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.subsection-five .div-two a:hover{
+    font-size: 25px;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
+.subsection-six{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: fit-content;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.subsection-six p{
+    width: 600px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+footer{
+    background-color: var(--main-color);
+    /* margin-top: 20px; */
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;    
+    
+}
+footer div{
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 10px;
+    padding: 8px 10px;    
+    
+}
+footer div h3 {  
+    text-align: left;
+    color: #f4f4f4;
+    margin-bottom: 6px;
+}
+
+footer div ul {
+    list-style-type:none;
+    color:  #f4f4f4;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color:  #f4f4f4;
+}
+.mapa{
+    height: 200px;
+    width: 350px;
+}
+
+footer div ul li a:hover {
+    text-decoration: none;
+    color:  var(--second-color);
+}
+
+footer .last-div-footer{
+    text-align: center;
+    display: block!important;
+    /* padding-left: 320px;  */
+    color: #fff;
+}
