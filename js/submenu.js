@@ -30,9 +30,9 @@ export default function secondmenu(){
             
                 $item_three.classList.remove("hover-item")
                 d.querySelector(".item-three li").classList.remove("hover-item-li")
-
+/* 
                 $item_four.classList.remove("hover-item")
-                d.querySelector(".item-four li").classList.remove("hover-item-li")
+                d.querySelector(".item-four li").classList.remove("hover-item-li") */
             }
           
            if(evento === $img_slide || 
@@ -54,8 +54,8 @@ export default function secondmenu(){
              $item_three.classList.remove("hover-item")
              d.querySelector(".item-three li").classList.remove("hover-item-li")
          
-             $item_four.classList.remove("hover-item")
-             d.querySelector(".item-four li").classList.remove("hover-item-li")
+           /*   $item_four.classList.remove("hover-item")
+             d.querySelector(".item-four li").classList.remove("hover-item-li") */
          
             }
      
@@ -72,12 +72,12 @@ export default function secondmenu(){
             
                 $item_three.classList.remove("hover-item")
                 d.querySelector(".item-three li").classList.remove("hover-item-li")
-
+/* 
                 $item_four.classList.remove("hover-item")
                 d.querySelector(".item-four li").classList.remove("hover-item-li")
 
                 $item_four.classList.remove("hover-item")
-                d.querySelector(".item-four li").classList.remove("hover-item-li")
+                d.querySelector(".item-four li").classList.remove("hover-item-li") */
            }
 
            if(evento === $item_three){
@@ -96,12 +96,12 @@ export default function secondmenu(){
             $item_one.classList.remove("hover-item")
             d.querySelector(".item-one li").classList.remove("hover-item-li")
 
-            $item_four.classList.remove("hover-item")
-            d.querySelector(".item-four li").classList.remove("hover-item-li")
+/*             $item_four.classList.remove("hover-item")
+            d.querySelector(".item-four li").classList.remove("hover-item-li") */
             
         }
 
-            if(evento === $item_four){ 
+       /*      if(evento === $item_four){ 
                 $item_four.classList.add("hover-item")              
                 d.querySelector(".item-four li").classList.add("hover-item-li")
                  
@@ -114,7 +114,7 @@ export default function secondmenu(){
                 $item_three.classList.remove("hover-item")
                 d.querySelector(".item-three li").classList.remove("hover-item-li")
             }
-
+ */
        });          
     
 }

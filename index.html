@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+    <title>WEB CLINICA</title>
 </head>
 <body>
     <header>
             <div class="main-head">               
-                <div><img class="wahtss" style="opacity: 80%;" src="img/calendar.png" height="20px" width="20px" alt=""> Separa una Cita</div>
+                <div class="btn-appointment" id="myBtn"><img class="wahtss" style="opacity: 80%;" src="img/calendar.png" height="20px" width="20px" alt=""> Separa una Cita</div>
                 <div><p style="background-color: inherit; color: #000;"><img style="height: 17px; background-color:inherit; " src="img/call.png"  alt=""> (+51) 999 999 999</p></div>
                 <div><p style="background-color: inherit; color: #000;"><img style="height: 17px; background-color:inherit; " src="img/notepad.png"  alt=""> Resultados</p></div>
             </div>
@@ -25,8 +26,7 @@
                         <a class="item-menu item-one" href=""><li class="">Pruebas COVID-19</li></a>
                         <a class="item-menu item-two" href=""><li class="">Consultas Médicas</li></a>
                         <a class="item-menu item-three" href=""><li class="">Laboratorio</li></a>
-                       <!--  <a class="item-menu  item-four" href=""><li class="">Menu4</li></a>
-     -->
+                       <!--  <a class="item-menu  item-four" href=""><li class="">Menu4</li></a>     -->
                         <!-- 
                         <li class="item-menu item-two"><a href="">Menu1</a></li>
                         <li class="item-menu item-three"><a href="">Menu1</a></li>
@@ -34,11 +34,8 @@
                     </ul>
                 </div>
              
-            </nav>
-
+            </nav>      
    
-
-          
             <div class="submenu uno" hidden>
                 <ul class="sub-list">
                    <a href=""><li class="sub-item">Pruebas moleculares</li></a> 
@@ -64,6 +61,25 @@
                 </ul>
             </div>
         </header>
+
+<div class="contenedor_formulario modal" id="myModal">
+    <form method="post" action="connect.php" class="form__citas" >
+        <div>
+            <img class="exit" src="img/exit.png" height="25px" alt="">
+        </div>
+        <h1>Reserva tu Cita</h1>
+        <label for="document">DNI</label><br>
+        <input type="number" name="document"> <br>
+        <label for="name_complete">NOMBRE COMPLETO</label><br>
+        <input type="text" name="name_complete"><br>
+        <label for="phone">CELULAR</label><br>
+        <input type="number" name="phone"><br>
+        <label for="address">DISTRITO</label><br>
+        <input type="text" name="address" ><br>        
+        <input type="submit" value="Enviar Formulario">
+    </form>   
+</div>
+      
         <!-- Button hamburguer -->
 
         <div class="menu-visibility">
@@ -78,7 +94,7 @@
                     <a href="#seccion1">Pruebas COVID-19</a>
                     <a href="#seccion2">Consultas Médicas</a>
                     <a href="#seccion3">Laboratorio</a>
-                    <a href="#seccion4">Zona de Covertura</a>
+                    <a href="#seccion4">Zona de Cobertura</a>
                     <a href="#seccion5">¿Cómo funciona?</a>
                     <a href="#seccion5">Agendamiento de citas</a>
                 </nav>
@@ -113,7 +129,7 @@
                 <div class="subsection-two">
                     <div>
                         <img src="img/map.png"  height="50px" alt="">
-                         <p><strong>Zona de Covertura</strong> 
+                         <p><strong>Zona de Cobertura</strong> 
                             Cobertura en Lima provincia y distritos:
                         
                         </p>   
@@ -206,7 +222,7 @@
                    </div>
                     <div  class="div-two">
                            <a href=""> <img style="height: 25px; " src="img/clipboard.png"  alt=""> Agendamiento Online</a> <br>
-                           <a href="">  Agendamiento por Call Center<img style="height: 20px; " src="img/call.png"  alt=""></a>
+                           <a href=""> <img style="height: 20px; " src="img/call.png"  alt=""> Agendamiento por Call Center</a>
                        
                     </div>
                 </div>
