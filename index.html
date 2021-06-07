@@ -14,8 +14,8 @@
     <header>
             <div class="main-head">               
                 <div class="btn-appointment" id="myBtn"><img class="wahtss" style="opacity: 80%;" src="img/calendar.png" height="20px" width="20px" alt=""> Separa una Cita</div>
-                <div><p style="background-color: inherit; color: #000;"><img style="height: 17px; background-color:inherit; " src="img/call.png"  alt=""> (+51) 999 999 999</p></div>
-                <div><p style="background-color: inherit; color: #000;"><img style="height: 17px; background-color:inherit; " src="img/notepad.png"  alt=""> Resultados</p></div>
+                <a href="https://api.whatsapp.com/send?phone=929736017" target="_blank"  ><div style="height: 17px; background-color:inherit; "><p style="background-color: inherit; color: #000;"><img style="height: 17px; background-color:#01e675; " src="img/logotipo-de-whatsapp.png"  alt=""> (+51) 999 999 999</p></div></a>
+               <a href="https://apps.sociosensalud.org.pe/6ResultCor/Login"> <div style="height: 17px; background-color:inherit;"><p style="background-color: inherit; color: #000;"><img style="height: 17px; background-color:inherit; " src="img/notepad.png"  alt=""> Resultados</p></div></a>
             </div>
             <nav class="main-menu">
                 <div class="contenedor-logo">
@@ -56,30 +56,40 @@
 
             <div class="submenu tres" hidden>
                 <ul class="sub-list">
-                    <a href=""><li class="sub-item">Hemogramas</li></a> 
-                                   
+                    <a href=""><li class="sub-item">Hemogramas Completo</li></a> 
+                    <a href=""><li class="sub-item">Glucosa</li></a> 
+                    <a href=""><li class="sub-item">Colesterol Total</li></a> 
+                    <a href=""><li class="sub-item">Triglicéridos</li></a> 
+                    <a href=""><li class="sub-item">Antígeno Prostático</li></a> 
+                    <a href=""><li class="sub-item">Thevenon</li></a>               
+
+                        
                 </ul>
             </div>
         </header>
+        <!-- Form Appointments -->
+        <div class="contenedor_formulario modal" id="myModal">
+            <form method="post" action="connect.php" class="form__citas" >
+                <div>
+                    <img class="exit close" src="img/exit.png" height="25px" alt="">
+                </div>
+                <h1>Reserva tu Cita</h1>
+                <label for="document">DNI</label><br>
+                <input class="input-document" type="number"  name="document" required <br>
 
-<div class="contenedor_formulario modal" id="myModal">
-    <form method="post" action="connect.php" class="form__citas" >
-        <div>
-            <img class="exit" src="img/exit.png" height="25px" alt="">
+                <label for="name_complete">NOMBRE COMPLETO</label><br>
+                <input type="text" name="name_complete" required><br>
+
+                <label for="phone">CELULAR</label><br>
+                <input type="number" name="phone" required><br>
+
+                <label for="address">DISTRITO</label><br>
+                <input type="text" name="address" required><br>   
+                     
+                <input type="submit" value="Enviar Formulario" target='_blank' >
+            </form>   
         </div>
-        <h1>Reserva tu Cita</h1>
-        <label for="document">DNI</label><br>
-        <input type="number" name="document"> <br>
-        <label for="name_complete">NOMBRE COMPLETO</label><br>
-        <input type="text" name="name_complete"><br>
-        <label for="phone">CELULAR</label><br>
-        <input type="number" name="phone"><br>
-        <label for="address">DISTRITO</label><br>
-        <input type="text" name="address" ><br>        
-        <input type="submit" value="Enviar Formulario">
-    </form>   
-</div>
-      
+            
         <!-- Button hamburguer -->
 
         <div class="menu-visibility">
@@ -111,7 +121,7 @@
                     <img src="img/logo.png" alt=""><br>
                     <div>
                         <p class="paragraph-sso">
-                            Test Covid a domicilio de ""clinica"", e un servicio de
+                            Test Covid a domicilio del Consultorio Oscar Romero, es un servicio de
                             atención en casa donde nuestro 
                            equipo de enfermería realizará la 
                            prueba Covid-19 de manera profesional 
@@ -119,10 +129,10 @@
                         </p>
                     </div>
                     <div>
-                        <h3>Test COVID-19 a domicilio</h3>
-                        <h2>S/.230.00</h2>
-                        <p>*consultar. el precio no es fijo</p>
-                        <button>Agenda tu cita</button>
+                        <h3>Test COVID-19 a domicilio desde</h3>
+                        <h2>S/.75.00</h2>
+                        <p>*No incluye movilidad</p>
+                       <button id="separate">Agenda tu cita</button>
                     </div>
                 </div>   
                 
@@ -141,32 +151,36 @@
                         <img src="img/calendar.png"  height="50px" alt="">
                         <p><strong>Horario de Atencion</strong> 
                             Servicio disponible de Lunes a Viernes
-                            entre 07:00 y 13:00 hrs..
+                            entre 07:00 y 18:00 hrs..
                         </p>
                     </div>
                 </div>
 
                 <div class="subsection-three">
-                    <h1>¿Por qué elegir las Pruebas Covid-19 a Domicilio de "Nombre de clínica"?</h1>
+                    <h1>¿Por qué elegir las Pruebas Covid-19 a Domicilio del Consultorio Oscar Romero?</h1>
                     <div>
                         <p>
                             Resultados en línea entre
-                            24 y 72 hrs
+                            24 y 72 hrs.
                         </p>
                     
                     </div>
                     <div class="different-div">
                         <p>
-                            Estudio de calidad, procesado por Laboratorio "nombre laborario"
+                            Análisis de pruebas procesadas en nuestros
+                             laboratorios con protocolos de la mas alta calidad 
+                            en el mercado e insumos de primer nivel que
+                             bridan confianza y exactitud de nuestros
+                              exámenes clínicos.
                         </p>
                     </div>
                     <div>
                         <p>
-                            Tu orden médica debe tener folio 
-                            de EPIVIGILA. Si no cuentes con
-                             orden médica, deberás completar 
-                             el formulario de PCR posterior
-                              a tu agendamiento.
+                            Cobertura de todos los distritos de Lima 
+                            metropolitana y Callao. Además,
+                             pertenecemos al grupo
+                              de “Socios en salud” con mas
+                               de 25 años en el sector salud.
                         </p>
                     </div>
                 </div> 
@@ -221,8 +235,8 @@
                     </p>
                    </div>
                     <div  class="div-two">
-                           <a href=""> <img style="height: 25px; " src="img/clipboard.png"  alt=""> Agendamiento Online</a> <br>
-                           <a href=""> <img style="height: 20px; " src="img/call.png"  alt=""> Agendamiento por Call Center</a>
+                           <a href="https://api.whatsapp.com/send?phone=929736017" target="_blank"> <img style="height: 25px; " src="img/clipboard.png"  alt=""> Agendamiento Online</a> <br>
+                           <a href="tel: +51 932557624"> <img style="height: 20px; " src="img/call.png"  alt=""> Agendamiento por Call Center - 999 999 999</a>
                        
                     </div>
                 </div>
@@ -253,9 +267,7 @@
                 <div>           
                     <ul>
                       <h3>Contactanos</h3>
-                        <li><a href="">Habla con nosotros</a></li>
-                        <li><a href="">Chatea con nosotros</a></li>
-                        <li><a href="">Dejanos un comentario</a></li>
+                        <li><a href="">Habla con nosotros</a></li>                    
                         <li><a href="">Envianos un correo</a></li>
                     </ul>
                 </div>
@@ -272,25 +284,14 @@
         
                  <div>
                     <h3>Ubicanos</h3>  
-                    <iframe  class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.7993921099905!2d-76.9388839845665!3d-12.057319445381188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6bf409a0bcf%3A0x8051ae49d0b48a4e!2sExplanada%20Del%20Monumental!5e0!3m2!1ses-419!2spe!4v1621872959604!5m2!1ses-419!2spe"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                
-               <!--  <div>        
-                    <ul>
-                        <h3>Ingreso Personal</h3>
-                        <li>                        
-                                Médicos                     
-                        </li>
-                        <li>                         
-                                Ejecutivos                                           
-                        </li>
-                    </ul>
-                </div> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.7271143489356!2d-76.94722258518732!3d-12.062287291456972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7d558751a21%3A0x904b4f928c70fba6!2sCONSULTORIO%20OSCAR%20ROMERO!5e0!3m2!1ses-419!2spe!4v1623028871991!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>               
+      
                 <div class="last-div-footer">
                   <p>2021 Consultorio Oscar Romero</p>  
                 </div>
             </footer>
-
+    <script src="js/button_citas.js"></script>
     <script src="js/index.js" type="module"></script>
 </body>
 </html>

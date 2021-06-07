@@ -280,7 +280,7 @@ display: inline-table;
 .subsection-three div{
    vertical-align: top;
    width: 290px;
-   height: 190px;
+   height: 227px;
    background-color: rgb(0, 121, 200, .7);
    display: inline-block;
    margin: 4px 5px;
@@ -363,6 +363,18 @@ display: inline-table;
     color: var(--main-color);
     text-decoration: none;
 }
+.subsection-five .div-two div{
+    width: 400px;
+    color: var(--main-color);
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.subsection-five .div-two div:hover{
+    font-size: 25px;
+    background-color: var(--main-color);
+    color: #fff;
+}
 .subsection-five .div-two a:hover{
     font-size: 25px;
     background-color: var(--main-color);
@@ -423,7 +435,7 @@ footer div ul li a {
 
 footer div ul li a:hover {
     text-decoration: none;
-    color:  var(--second-color);
+    text-decoration: underline;
 }
 
 footer .last-div-footer{
