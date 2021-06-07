@@ -5,6 +5,9 @@
             text-align: center;
             box-shadow: 0 10px 2px -2px gray;          
         }
+        .main-banner img{
+            height: 250px;
+        }
         .main-head{
             visibility: hidden;
             height: 0px;
@@ -336,7 +339,7 @@
         font-size: 15px;
     }
     .subsection-five .div-two a:hover{
-        font-size: 25px;
+        font-size: inherit;
         background-color: var(--main-color);
         color: #fff;
     }
@@ -353,13 +356,18 @@
     }
 
     .subsection-six p{
-        width: 200px;
-        margin: 5px auto;
-        text-align: left;
+        font-size: 18px;   
+        margin: 5px auto;   
         padding-left: 20px;
         padding-right: 20px;
+        text-align: left;
+        width: 200px;
     }
-
+    .subsection-six img{       
+        height: 35px;
+        display: block;
+        margin: 15px auto;
+    }
     /* FOOTER */
 
     footer{
@@ -404,13 +412,12 @@
     }
 
     footer .last-div-footer{
-        text-align: left;
         padding: 0px;
-        /* display: block!important; */
-    /*  padding-left: 320px;  */
-    /*   color: #fff; */
+        text-align: left; 
     }
     footer .last-div-footer p{
         text-align: left;
     }
+ 
 }
+
