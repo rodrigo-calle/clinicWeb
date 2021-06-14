@@ -10,7 +10,7 @@
 
                     $host = "localhost";
                     $dbusername = "root";
-                    $dbpassword = "root";
+                    $dbpassword = "balto";
                     $dbname = "citas";
                     // Create connection
                     $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
@@ -18,7 +18,7 @@
                         die('Connect Error (' . mysqli_connect_errno() . ') '
                             . mysqli_connect_error());
                     } else {
-                        $sql = "INSERT INTO appointment (document, name_complete, phone, address )
+                        $sql = "INSERT INTO registros (document, name_complete, phone, address )
     values ('$document','$name_complete', '$phone', '$address')";
                         if ($conn->query($sql)) {
                             

@@ -14,23 +14,18 @@
     <header>
             <div class="main-head">               
                 <div class="btn-appointment" id="myBtn"><img class="wahtss" style="opacity: 80%;" src="img/calendar.png" height="20px" width="20px" alt=""> Separa una Cita</div>
-                <a href="https://api.whatsapp.com/send?phone=929736017" target="_blank"  ><div style="height: 17px; background-color:inherit; "><p style="background-color: inherit; color: #000;"><img style="height: 17px; background-color:#01e675; " src="img/logotipo-de-whatsapp.png"  alt=""> (+51) 999 999 999</p></div></a>
+                <a href="https://api.whatsapp.com/send?phone=929736017" target="_blank"  ><div style="height: 17px; background-color:inherit; "><p style="background-color: inherit; color: #000;"><img style="height: 17px; background-color: inherit;" src="img/whatsapp_icon-icons.com_62756.png"  alt=""> (+51) 999 999 999</p></div></a>
                <a href="https://apps.sociosensalud.org.pe/6ResultCor/Login"> <div style="height: 17px; background-color:inherit;"><p style="background-color: inherit; color: #000;"><img style="height: 17px; background-color:inherit; " src="img/notepad.png"  alt=""> Resultados</p></div></a>
             </div>
             <nav class="main-menu">
                 <div class="contenedor-logo">
-                    <a class="cont-logo" href=""><img class="logo" src="img/logo.png" alt=""></a>
+                    <a class="cont-logo" href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
                 </div>
                 <div>
                     <ul class="list-menu">                    
                         <a class="item-menu item-one" href="/test.html"><li class="">Pruebas COVID-19</li></a>
                         <a class="item-menu item-two" href="/appointment.html"><li class="">Consultas Médicas</li></a>
                         <a class="item-menu item-three" href="/lab.html"><li class="">Laboratorio</li></a>
-                       <!--  <a class="item-menu  item-four" href=""><li class="">Menu4</li></a>     -->
-                        <!-- 
-                        <li class="item-menu item-two"><a href="">Menu1</a></li>
-                        <li class="item-menu item-three"><a href="">Menu1</a></li>
-                        <li class="item-menu item-four"><a href="">Menu1</a></li> -->
                     </ul>
                 </div>
              
@@ -101,12 +96,12 @@
         
             <aside class="panel">
                 <nav class="menu">
-                    <a href="#seccion1">Pruebas COVID-19</a>
-                    <a href="#seccion2">Consultas Médicas</a>
-                    <a href="#seccion3">Laboratorio</a>
-                    <a href="#seccion4">Zona de Cobertura</a>
-                    <a href="#seccion5">¿Cómo funciona?</a>
-                    <a href="#seccion5">Agendamiento de citas</a>
+                    <a href="test.html">Pruebas COVID-19</a>
+                    <a href="appointment.html">Consultas Médicas</a>
+                    <a href="lab.html">Laboratorio</a>
+                    <a href="index.html#cobertura">Zona de Cobertura</a>
+                    <a href="index.html#como_funciona">¿Cómo funciona?</a>
+                    <a href="index.html#agendamiento">Agendar de citas</a>
                 </nav>
             </aside>
         </div>
@@ -114,21 +109,21 @@
         <!-- Fin button -->
    
             <div class="main-banner">
-                <img src="img/banner-medic-page.jpg" height="600px" width="100%" alt="">
+                <img src="img/medic.jpg" height="400px" width="100%" alt="">
             </div>
             <section>
-                <div class="subsection-one">
+                <div class="subsection-one" id="agenda_covid">
                     <img src="img/logo.png" alt=""><br>
                     <div>
                         <p class="paragraph-sso">
-                            Test Covid a domicilio del Consultorio Oscar Romero, es un servicio de
-                            atención en casa donde nuestro 
+                           Prueba Covid a domicilio del Consultorio Oscar Romero, es un servicio de
+                           atención en casa donde nuestro 
                            equipo de enfermería realizará la 
                            prueba Covid-19 de manera profesional 
                            y conveniente, en la comodidad de tu hogar u oficina.
                         </p>
                     </div>
-                    <div>
+                    <div >
                         <h3>Test COVID-19 a domicilio desde</h3>
                         <h2>S/.75.00</h2>
                         <p>*No incluye movilidad</p>
@@ -137,7 +132,7 @@
                 </div>   
                 
                 <div class="subsection-two">
-                    <div>
+                    <div id="cobertura">
                         <img src="img/map.png"  height="50px" alt="">
                          <p><strong>Zona de Cobertura</strong> 
                             Cobertura en Lima provincia y distritos:
@@ -158,7 +153,7 @@
                 <div class="cobertura menu-visibility">
                     <ul>
                         <div>                        
-                        <li><img src="img/position.png" height="15px" alt=""> Ancón</li>
+                        <li><img src="img/position.png" height="15px" alt="">Ancón</li>
                         <li><img src="img/position.png" height="15px" alt="">Ate</li>
                         <li><img src="img/position.png" height="15px" alt="">Barranco</li>
                         <li><img src="img/position.png" height="15px" alt="">Breña</li>
@@ -209,7 +204,7 @@
                         <li><img src="img/position.png" height="15px" alt="">Callao</li>
                     </div>
                     </ul>
-                    <button id="cobertura">Ocultar Zona de Covertura</button>
+                    <button id="cobertura">Ocultar Zona de Cobertura</button>
 
                 </div>
 
@@ -241,12 +236,12 @@
                         </p>
                     </div>
                 </div> 
-                <div class="subsection-four">
+                <div class="subsection-four" id="como_funciona">
                     <h1>¿Cómo funciona?</h1> <br><br> <br>
                     <div>
                         <div class="circle">1</div>                  
                        <p>
-                           <strong>Solicitud de Agendamiento</strong>
+                           <strong>Solicitud de Cita</strong>
                         Completa los campos de información y adjunta
                         tu orden médica, en caso que cuentes con ella 
                         deberás completar un formulario de notificación.
@@ -285,25 +280,31 @@
     
 
                 <div  class="subsection-five">
-                   <div>
-                    <h1 class="div-one">Agendamiento de manera onnline o call center</h1>
+                   <div id="agendamiento">
+                    <h1 class="div-one">Agendar de manera onnline o call center</h1>
                     <p>Puedes agendar un cita ahora mismo por nuestros siguientes canales:
                         
                     </p>
                    </div>
                     <div  class="div-two">
-                           <a href="https://api.whatsapp.com/send?phone=929736017" target="_blank"> <img style="height: 25px; " src="img/clipboard.png"  alt=""> Agendamiento Online</a> <br>
-                           <a href="tel: +51 932557624"> <img style="height: 20px; " src="img/call.png"  alt=""> Agendamiento por Call Center - 999 999 999</a>
+                           <a href="https://api.whatsapp.com/send?phone=929736017" target="_blank"> <img style="height: 25px; " src="img/clipboard.png"  alt=""> Agendar en línea</a> <br>
+                           <a href="tel: +51 932557624"> <img style="height: 20px; " src="img/call.png"  alt=""> Agendar por Call Center - 999 999 999</a>
                        
                     </div>
                 </div>
                 <div class="subsection-six">
-                    <p><strong>Nuestros clientes:</strong> <br> <br>
+                    <p><strong>Principales Socios:</strong> <br> <br>
                   <img src="img/drimer.png" alt="">
-                  <img src="img/al.png" alt="">
+                  <img src="img/aje.png" alt="">
                   <img src="img/bcr.png" alt="">
                   <img src="img/logo_corpac.png" alt="">
-                  <img src="img/Amcor_logo.png" alt="">
+                  <img src="img/Amcor_logo.png" alt="">  <br> 
+                  <img src="img/Sanna.png" height="110px" width="100px" alt="">   
+                  <img src="img/LOGO OSCE.png" alt="">  
+                  <img src="img/Marsh_Logo.png" alt="">  
+                  <img src="img/rokys.png" alt="">  
+
+
                        
                     </p>
 
@@ -316,17 +317,18 @@
                 <div>           
                     <ul>
                       <h3>Servicios</h3>
-                        <li><a href="">Registra una cita</a></li>
-                        <li><a href="">Diagnostico Covid</a></li>
-                        <li><a href="">Laboratorio Clínico</a></li>
-                        <li><a href="">Pediatría</a></li>
+                        <li><a href="index.html#agenda_covid">Registra una cita</a></li>
+                        <li><a href="test.html">Diagnostico Covid</a></li>
+                        <li><a href="lab.html">Laboratorio Clínico</a></li>
+                        <li><a href="appointment.html">Consultas Médicas</a></li>
                     </ul>
                 </div>
            
                 <div>           
                     <ul>
                       <h3>Contactanos</h3>
-                        <li><a href="">Habla con nosotros</a></li>                    
+                      <li><a href="https://api.whatsapp.com/send?phone=929736017" target="_blank" >Habla con nosotros</a></li>                    
+               
                         <li><a href="">Envianos un correo</a></li>
                     </ul>
                 </div>

@@ -17,6 +17,10 @@
    
    
 } */
+.active_menu{
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
 .main-head{
     height: fit-content;
     background-color: var(--opacity-color);   
@@ -146,6 +150,9 @@ display: inline-table;
 }
 .main-banner{
     position: relative; 
+    /* height: 400px; */
+    opacity: .7;
+
 }
 
 .subsection-one{

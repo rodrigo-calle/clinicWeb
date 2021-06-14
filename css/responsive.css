@@ -1,9 +1,8 @@
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1060px){
         header{
             width: 100%;
             height:90px; 
-            text-align: center;
-            box-shadow: 0 10px 2px -2px gray;          
+            text-align: center;                 
         }
         .main-banner img{
             height: 250px;
@@ -40,8 +39,10 @@
          /*  RESPONSIVE MENU */ 
 
         .menu-visibility{
-            visibility: visible;
+          display: block;
+          height: fit-content;
         }
+
         .panel{
             position:fixed;
             z-index: 998;
@@ -418,6 +419,69 @@
     footer .last-div-footer p{
         text-align: left;
     }
- 
+
+    /* laboratorio page */
+    .main-banner {
+        padding-left: 18px!important;
+        padding-top: 15px!important;
+        padding-bottom: 15px!important;
+        opacity: 1;
+    }
+    .container-submenu{
+        visibility: hidden;
+        height: 0px;
+        margin: 0px!important;
+    }
+
+    .head-lab{
+        margin: 0px!important;
+    }
+.container-head{
+    height: fit-content;
+    margin: 0px;
+   
+}
+    .container-img{
+        margin-top: 0px!important;
+    }
+    .container-img .banner{
+        height: 190px!important;
+        width: 300px!important;
+    }
+
+    .container-labs div{
+        width: 300px;
+        height: 300px!important;
+    }
+
+    .container-labs div p{
+        width: 250px!important;
+    }
+
+
+    .btn-separate{
+        background-image: url("../img/btn_img.jpg");
+        background-size: cover;
+        border-radius: 7px;
+        height: 50px!important;
+        width: 300px!important;
+        position: relative;
+     }
+    
+    .btn-separate button{   
+      border: none;
+      border-radius: 7px;
+      background-color: darkblue;
+      color: var(--light-color);
+      cursor: pointer;
+      padding: 5px 8px!important     ;
+      font-weight: bolder;
+      margin-top: 0px!important;
+      height: 50px!important;
+      width: 300px!important;
+    }
+    .btn-separate button:hover{
+        background-color: var(--main-color);
+    }
 }
 
