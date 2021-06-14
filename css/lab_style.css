@@ -1,0 +1,108 @@
+.main-banner{
+    height: fit-content!important;
+    background-color:var(--main-color);
+    color: var(--light-color);
+    font-size: 25px;
+    padding-left: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.head-lab{
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+   
+}
+.head-lab div{
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container-img .banner{
+    width: 750px;
+    height: 400px;
+}
+.container-img{
+    text-align: left;
+}
+.container-img p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: grey;
+}
+.container-img h2{
+    margin-bottom: 25px;
+}
+
+.container-img ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 5px;
+    color: grey;
+}
+.container-img ul li img{
+    margin-right: 10px;  
+}
+.container-submenu{    
+    border: 13px solid var(--main-color);
+    width: fit-content;
+}
+.container-submenu ul{
+    padding: 0px;
+    width: 200px;
+    text-align: left;
+}
+.container-submenu h2{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.container-submenu ul a{
+    text-decoration: none;
+    padding-top: 15px;
+}
+.container-submenu a li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+.container-submenu a li:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    width: 190px;
+}
+.container-submenu a li{
+    list-style: none;
+    color: grey;
+    font-weight: bolder;
+    width: 100%;
+}
+.container-labs{
+ text-align: center;
+ margin-top: 25px;
+ margin-bottom: 25px;
+}
+.container-labs div{
+    border: 5px solid var(--main-color);
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: top;
+    height: 249px;
+    margin: 5px;
+}
+
+.container-labs div img{
+    margin-top: 10px;
+}
+
+.container-labs div p{
+    width: 400px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.container-labs div p strong{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

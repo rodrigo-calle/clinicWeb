@@ -17,6 +17,10 @@
    
    
 } */
+.active_menu{
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
 .main-head{
     height: fit-content;
     background-color: var(--opacity-color);   
