@@ -66,7 +66,7 @@
     padding-bottom: 15px;
     padding-left: 10px;
 }
-.container-submenu a li:hover{
+.container-submenu a li:hover{ 
     background-color: var(--main-color);
     color: #fff;
     width: 190px;
@@ -109,3 +109,35 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.btn-separate{
+    background-image: url("../img/btn_img.jpg");
+    background-size: cover;
+    border-radius: 7px;
+    height: 300px;
+    width: 220px;
+    position: relative;
+    
+    /* border: 1px solid #000; */
+  
+}
+
+.btn-separate button{
+ 
+  border: none;
+  border-radius: 7px;
+   background-color: darkblue;
+  color: var(--light-color);
+  cursor: pointer;
+  padding: 10px 15px;
+  font-weight: bolder;
+  margin-top: 120px;
+}
+.btn-separate button:hover{
+    background-color: var(--main-color);
+}
+/* .btn-separate img{
+    border-radius: 7px;
+    height: 300px;
+    width: 220px;  
+ 
+} */

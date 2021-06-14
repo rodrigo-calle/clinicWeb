@@ -14,7 +14,7 @@
 <body>
     <header>
             <div class="main-head">               
-                <!-- <div class="btn-appointment" id="myBtn"><img class="wahtss" style="opacity: 80%;" src="img/calendar.png" height="20px" width="20px" alt=""> Separa una Cita</div> -->
+                <div class="btn-appointment" id="myBtn"><img class="wahtss" style="opacity: 80%;" src="img/calendar.png" height="20px" width="20px" alt=""> Separa una Cita</div>
                 <a href="https://api.whatsapp.com/send?phone=929736017" target="_blank"  style="background-color: inherit;" ><div style="height: 17px; background-color:inherit; "><p style="background-color: inherit; color: #000;"><img style="height: 17px; background-color: inherit;" src="img/whatsapp_icon-icons.com_62756.png"  alt=""> (+51) 999 999 999</p></div></a>    
                 <a href="https://apps.sociosensalud.org.pe/6ResultCor/Login"> <div style="height: 17px; background-color:inherit;"><p style="background-color: inherit; color: #000;"><img style="height: 17px; background-color:inherit; " src="img/notepad.png"  alt=""> Resultados</p></div></a>
             </div>
@@ -35,7 +35,7 @@
         </header>
         
             <!-- Form Appointments -->
-            <div class="contenedor_formulario modal" id="myModal usModal">
+            <div class="contenedor_formulario modal" id="myModal">
                 <form method="post" action="connect.php" class="form__citas" >
                     <div>
                         <img class="exit close" src="img/exit.png" height="25px" alt="">
@@ -84,14 +84,21 @@
            <h1>Pruebas COVID-19</h1>
         </div>
         <div class="head-lab">
-            <div class="container-submenu">
-                <h2>Servicios</h2>
-                <ul>
-                    <a href="lab.html"><li >Laboratorio</li></a>
-                    <a href="appointment.html"><li >Consultas Médicas</li></a>
-                    <a href="test.html"><li class="active_menu" style="color: #fff;">Pruebas Covid</li></a>                                      
-                </ul>
+            <div class="container-head">
+                <div class="container-submenu">
+                    <h2>Servicios</h2>
+                    <ul>
+                        <a href="lab.html"><li >Laboratorio</li></a>
+                        <a href="appointment.html"><li >Consultas Médicas</li></a>
+                        <a href="test.html"><li class="active_menu" style="color: #fff;">Pruebas Covid</li></a>                                      
+                    </ul>
+                </div>
+                <br>
+                <div class="btn-separate">
+                    <button id="separate">Agenda tu cita</button>
+                </div>
             </div>
+
             <div class="container-img"><img class="banner" src="img/appointment.jpg" alt="">  
                 <h1>Pruebas de descarte COVID-19</h2>   
                 <p>Pruebas de descarte a domicilio en todo Lima provincia y Callao.</p>       
@@ -150,7 +157,8 @@
             <div>           
                 <ul>
                   <h3>Contactanos</h3>
-                    <li><a href="">Habla con nosotros</a></li>                    
+                  <li><a href="https://api.whatsapp.com/send?phone=929736017" target="_blank" >Habla con nosotros</a></li>                    
+                 
                     <li><a href="">Envianos un correo</a></li>
                 </ul>
             </div>
@@ -176,7 +184,7 @@
         </footer>
 
 
-    <script src="js/button_citas.js" type="module"></script>
+    <script src="js/citas_lab.js"></script>
     <script src="js/index.js" type="module"></script>
     <script src="js/zone.js" type="module"></script>
 </body>
