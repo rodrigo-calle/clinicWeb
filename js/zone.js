@@ -9,8 +9,9 @@ export default function showZone(){
             zone.classList.remove("menu-visibility")
             cover.classList.remove("menu-visibility")
         }
+        
         if(e.target === cover){
-            zone.classList.add("menu-visibility")
+            zone.classList.add("menu-visibility") 
             cover.classList.add("menu-visibility")
         }
     })

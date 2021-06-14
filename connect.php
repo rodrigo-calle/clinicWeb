@@ -9,16 +9,16 @@
                 if (!empty($address)) {
 
                     $host = "localhost";
-                    $dbusername = "root";
-                    $dbpassword = "balto";
-                    $dbname = "citas";
+                    $dbusername = "test";
+                    $dbpassword = "test";
+                    $dbname = "appointments";
                     // Create connection
                     $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
                     if (mysqli_connect_error()) {
                         die('Connect Error (' . mysqli_connect_errno() . ') '
                             . mysqli_connect_error());
                     } else {
-                        $sql = "INSERT INTO registros (document, name_complete, phone, address )
+                        $sql = "INSERT INTO registers (document, name_complete, phone, address )
     values ('$document','$name_complete', '$phone', '$address')";
                         if ($conn->query($sql)) {
                             
