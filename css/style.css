@@ -150,6 +150,9 @@ display: inline-table;
 }
 .main-banner{
     position: relative; 
+    /* height: 400px; */
+    opacity: .7;
+
 }
 
 .subsection-one{

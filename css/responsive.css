@@ -426,6 +426,7 @@
         padding-left: 18px!important;
         padding-top: 15px!important;
         padding-bottom: 15px!important;
+        opacity: 1;
     }
     .container-submenu{
         visibility: hidden;

@@ -90,6 +90,9 @@
     height: 249px;
     margin: 5px;
 }
+.main-banner{
+    opacity: 1;
+}
 
 .container-labs div img{
     margin-top: 10px;
