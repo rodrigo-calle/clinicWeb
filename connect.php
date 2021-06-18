@@ -8,9 +8,9 @@
             if (!empty($phone)) {
                 if (!empty($address)) {
 
-                    $host = "localhost";
-                    $dbusername = "test";
-                    $dbpassword = "test";
+                    $host = "us-cdbr-east-04.cleardb.com";
+                    $dbusername = "b0acb43e4b9e57";
+                    $dbpassword = "e2560c7d";
                     $dbname = "appointments";
                     // Create connection
                     $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
