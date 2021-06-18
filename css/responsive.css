@@ -38,10 +38,10 @@
 
          /*  RESPONSIVE MENU */ 
 
-        .menu-visibility{
-       /*    display: block;
-          height: fit-content; */
-        }
+     /*    .menu-visibility{
+          display: block;
+          height: fit-content;
+        } */
 
         .panel{
             position:fixed;

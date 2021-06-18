@@ -11,14 +11,14 @@
                     $host = "us-cdbr-east-04.cleardb.com";
                     $dbusername = "b0acb43e4b9e57";
                     $dbpassword = "e2560c7d";
-                    $dbname = "appointments";
+                    $dbname = "heroku_61cefa9251888fd";
                     // Create connection
                     $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
                     if (mysqli_connect_error()) {
                         die('Connect Error (' . mysqli_connect_errno() . ') '
                             . mysqli_connect_error());
                     } else {
-                        $sql = "INSERT INTO registers (document, name_complete, phone, address )
+                        $sql = "INSERT INTO appointments (document, name_complete, phone, address )
     values ('$document','$name_complete', '$phone', '$address')";
                         if ($conn->query($sql)) {
                             
