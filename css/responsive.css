@@ -39,8 +39,8 @@
          /*  RESPONSIVE MENU */ 
 
         .menu-visibility{
-          display: block;
-          height: fit-content;
+       /*    display: block;
+          height: fit-content; */
         }
 
         .panel{
