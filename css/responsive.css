@@ -63,6 +63,16 @@
 
             
         }
+
+        .subsection-one .costos-test{
+            display: block;
+            width: 80%;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin: 3px auto;
+            
+        }
+
         .acrive-form{
             transform: translate(0,0);
         }
@@ -112,18 +122,13 @@
             background-color: var(--second-color);
         }
                 
-       /* FIN RESPONSIVE MENU */ 
+    /* FIN RESPONSIVE MENU */ 
+    
     /* subsection dos */
-
     .subsection-one{
         width: 100%;
         height: fit-content;
         background-color: var(--opacity-color);
-    /*  padding-top: 50px; */
-    /*     padding-bottom: 35px; */
-    /*     padding-left: 50px;
-        padding-right: 50px */;
-        /* text-align: center; */ 
     }
 
     .subsection-one img{
@@ -136,52 +141,12 @@
     .subsection-one div{
         font-family: Arial, Helvetica, sans-serif;
         vertical-align: top;
-        font-size: 18px;
-    /*  margin-top: 20px; */
-        /* text-align: left; */
-        text-align: justify!important;
-        width: 100%;
+        font-size: 18px;         
+        width: 80%;
         font-weight: lighter; 
-        margin: 0px;
-    margin-top: 20px ;
-    }
-    .paragraph-sso{
-        margin: 8px;
-        text-align: justify!important;
-    
-    }
-
-    .subsection-one :last-child{
-        text-align: center!important;
-        font-size: 18px;
-    }
-
-    .subsection-one :last-child h3{
-        color: var(--main-color);
-        font-weight: normal;
-        
-    }
-    .subsection-one :last-child h2{
-        color: var(--main-color);
-        font-weight: bold;
-    }
-
-    .subsection-one :last-child p{
-        font-size: 11px;
-    }
-
-    .subsection-one :last-child button{
-        background-color:#c5017b ;
-        color: #fff;
-        font-weight: bold;
-        font-size: 16px;
-        padding: 8px 18px;
-        border-radius: 7px;
-        border: none;
-        cursor: pointer;
-    
-
-    }
+        margin: 0px auto;
+        margin-top:20px;        
+    } 
 
     /* subsection dos */
 
