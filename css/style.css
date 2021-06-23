@@ -25,14 +25,23 @@
     height: fit-content;
     background-color: var(--opacity-color);   
     text-align: right;
+    height: 60px;
 }
 .main-head div{
-    font-size: 15px;
     display: inline-block;
     height: fit-content;
-    padding: 9px 10px;
+    height: 60px;
+    width: 200px;
+    /* padding-top: 9px ;  */
     border-right: 3px solid #fff ;
-    cursor: pointer;
+    cursor: pointer;   
+
+}
+.main-head div p{
+    text-align: center; 
+    margin-top: 15px; 
+    font-size: 20px;
+
 }
 
 .main-head :first-child{
@@ -56,11 +65,12 @@
      height: fit-content;
      text-align: left;
      margin-left: 190px;
-     margin-bottom: 20px;
+/*      margin-bottom: 20px; */
  }
 
 .contenedor-logo a img{
-    height: 60px;
+    height: 120px;
+    width: 210px;
 }
 .list-menu{   
    height: 60px;
@@ -69,7 +79,33 @@
   
 }
 
+/* ICONOS SOCIOS */
+.sanna-icon{  
+    height: 70px!important;  
 
+}
+.segundo-div-socios{
+    margin-top: 10px;
+}
+/* 
+.marsh-icon{
+    vertical-align: bottom;
+}
+.rockys-icon{
+    vertical-align: bottom;
+}
+
+.osce-icon{
+    vertical-align: bottom;
+}
+
+
+ */
+/* FIN ICONOS SOCIOS */
+
+/* "osce-icon"alt="">  
+                    <img src="img/Marsh_Logo.png"  class="marsh-icon" alt="">  
+                    <img src="img/rokys.png"  class="rockys-icon */
 
 /* 
 display: inline-table;
@@ -89,8 +125,16 @@ display: inline-table;
     height:inherit; 
     display: inline-block;
     list-style: none;
-    padding: 5px 25px;
+    padding: 25px 25px;
+    font-size: 20px;
+    font-weight: bold;
     
+}
+.list-menu .item-active{
+    background-color: var(--main-color);
+    color: #fff;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 
@@ -152,7 +196,11 @@ display: inline-table;
     position: relative; 
     /* height: 400px; */
     opacity: .7;
+}
 
+.paragraph-sso{
+    width: 900px;
+    margin: 20px auto;  
 }
 
 .subsection-one{
@@ -167,50 +215,65 @@ display: inline-table;
 }
 
 .subsection-one img{
-    height: 60px;
+    height: 120px;
+    width: 300px;
     display: block;
     margin: 0px auto;
 }
 
-.subsection-one div{
+.subsection-one .costos-test{
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: top;
     font-size: 18px;
     margin-top: 20px;
     text-align: left;
-    width: 25%;
+    width: 20%;
     display: inline-block;
     margin-top: 20px ;
+    background-color: rgb(0, 121, 200, .7);
+    border-radius: 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
-.subsection-one :last-child{
+.subsection-one .costos-test:hover{
+    background-color: rgb(0, 121, 200)
+}
+
+
+
+.subsection-one .costos-test{
     text-align: center!important;
     font-size: 18px;
 }
 
-.subsection-one :last-child h3{
-    color: var(--main-color);
+.subsection-one .costos-test h3{
+    color: #fff;
     font-weight: normal;
     
 }
-.subsection-one :last-child h2{
-    color: var(--main-color);
+.subsection-one .costos-test h2{
+    color: #fff;
     font-weight: bold;
 }
 
-.subsection-one :last-child p{
+.subsection-one .costos-test p{
     font-size: 11px;
+    color: #fff;
 }
 
-.subsection-one :last-child button{
+.subsection-one button{
     background-color:#c5017b ;
     color: #fff;
     font-weight: bold;
     font-size: 16px;
     padding: 8px 18px;
+    height: 50px;
     border-radius: 7px;
     border: none;
     cursor: pointer;
+    width: 300px;
    
 
 }
@@ -432,8 +495,7 @@ display: inline-table;
 
 .subsection-six p{
     font-size: 25px;
-    margin: 30px auto;  
-    width: 100%;
+    margin: 30px auto;    
 
 }
 
@@ -442,6 +504,7 @@ display: inline-table;
     margin: auto 18px;
     opacity: .6;
 }
+
 
 footer{
     background-color: var(--main-color);
